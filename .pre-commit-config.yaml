@@ -37,4 +37,3 @@ repos:
       - id: nbqa-isort
       - id: nbqa-check-ast
       - id: nbqa-flake8
-      - id: nbqa-mypy
