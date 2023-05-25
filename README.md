@@ -1,8 +1,11 @@
 # aieng-template
 aieng template repo, the static code checker runs on python3.8
 
-# Installing dependencies
+# Environment Setup and Installing dependencies
 ```
+module load python/3.9.10
+python -m venv ad_anv
+source ad_env/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
