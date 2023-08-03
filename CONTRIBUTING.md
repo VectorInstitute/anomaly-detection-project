@@ -5,14 +5,6 @@ Thanks for your interest in contributing!
 To submit PRs, please fill out the PR template along with the PR. If the PR
 fixes an issue, don't forget to link the PR to the issue!
 
-## Pre-commit hooks
-
-Once the python virtual environment is setup, you can run pre-commit hooks using:
-
-```bash
-pre-commit run --all-files
-```
-
 ## Coding guidelines
 
 For code style, we recommend the [google style guide](https://google.github.io/styleguide/pyguide.html).
