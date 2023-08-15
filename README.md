@@ -28,11 +28,11 @@ We hope this bootcamp provides a valuable learning experience in the exciting fi
 
 
 # Environment setup
+
+Using python 3.7.9, execute the following commands from the root of this repository: 
 ```
-module load python/3.9.10 # Cluster only
-python -m venv ad_anv
+python -m venv ad_env
 source ad_env/bin/activate
-cd anomaly-detection-project
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
