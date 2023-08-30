@@ -1,6 +1,6 @@
 # Anomaly Detection Bootcamp
 
-This repository contains the resources and code for an Anomaly Detection Bootcamp, focused on exploring and implementing anomaly detection techniques. Anomaly detection plays a crucial role in various domains, including fraud detection, network intrusion detection, system monitoring, and image analysis. The bootcamp aims to provide participants with a comprehensive understanding of anomaly detection algorithms and their practical applications.
+This repository contains the resources and code for an Anomaly Detection Bootcamp, focused on exploring and implementing anomaly detection techniques. Anomaly detection plays a crucial role in various domains, including fraud detection, network intrusion detection, system monitoring, and image and video analysis. The bootcamp aims to provide participants with a comprehensive understanding of anomaly detection algorithms and their practical applications.
 
 ## Introduction to Anomaly Detection
 
@@ -8,11 +8,17 @@ Anomaly detection is the process of identifying patterns or instances that devia
 
 ## Datasets
 
-The bootcamp utilizes two diverse datasets to cover a broad range of anomaly detection applications. Each dataset offers unique challenges and opportunities for participants to explore and experiment with different techniques.
+The bootcamp utilizes four diverse datasets to cover a broad range of anomaly detection applications. Each dataset offers unique challenges and opportunities for participants to explore and experiment with different techniques.
 
 ### MVTec AD
 
 The MVTec AD dataset serves as a benchmark for anomaly detection and segmentation in images. It consists of 5,000 high-resolution images, categorized into fifteen different object and texture categories. Each category comprises a set of normal training images and a test set containing images with various defects, as well as defect-free images. Participants will work with this dataset to develop image-based anomaly detection models.
+
+### Bank Account Fraud (BAF)
+
+The Bank Account Fraud (BAF) suite is derived from a real-world online bank account opening fraud detection dataset. It consists of six individual datasets, each featuring predetermined and controlled types of data bias across multiple time-steps. The BAF suite emphasizes the importance of fair ML practices in the context of financial services, considering the potential impact of model predictions on individuals' access to financial resources and social equity.
+
+Each set in the BAF datasets consist of one million instances with thirty features, including protected attributes such as age, personal income, and employment status. To address privacy concerns, state-of-the-art Generative Adversarial Network (GAN) models were employed to generate the datasets, with injected differential privacy into the instances of the original dataset. The BAF datasets are designed to stress test the performance and fairness of ML models in dynamic environments.
 
 ### DGraph
 
