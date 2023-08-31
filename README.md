@@ -16,7 +16,7 @@ The MVTec AD dataset serves as a benchmark for anomaly detection and segmentatio
 
 ### Bank Account Fraud (BAF)
 
-The Bank Account Fraud (BAF) suite is derived from a real-world online bank account opening fraud detection dataset. It consists of six individual datasets, each featuring predetermined and controlled types of data bias across multiple time-steps. The BAF suite emphasizes the importance of fair ML practices in the context of financial services, considering the potential impact of model predictions on individuals' access to financial resources and social equity.
+The Bank Account Fraud (BAF) suite is derived from a real-world online bank account opening fraud detection dataset. It consists of six individual tabular datasets, each featuring predetermined and controlled types of data bias across multiple time-steps. The BAF suite emphasizes the importance of fair ML practices in the context of financial services, considering the potential impact of model predictions on individuals' access to financial resources and social equity.
 
 Each set in the BAF datasets consist of one million instances with thirty features, including protected attributes such as age, personal income, and employment status. To address privacy concerns, state-of-the-art Generative Adversarial Network (GAN) models were employed to generate the datasets, with injected differential privacy into the instances of the original dataset. The BAF datasets are designed to stress test the performance and fairness of ML models in dynamic environments.
 
@@ -37,14 +37,3 @@ The dataset comprises 16 training video samples and 12 testing video samples, ea
 To get started with the bootcamp and access the datasets, please follow the instructions provided in the respective dataset folders. Each dataset folder contains the necessary documentation, code examples, and data files required for the bootcamp sessions.
 
 We hope this bootcamp provides a valuable learning experience in the exciting field of anomaly detection. Feel free to explore, experiment, and contribute to this repository. If you have any questions or feedback, please don't hesitate to reach out.
-
-
-# Environment setup
-
-Using python 3.7.9, execute the following commands from the root of this repository: 
-```
-python -m venv ad_env
-source ad_env/bin/activate
-pip install --upgrade pip
-pip install -r requirements.txt
-```
