@@ -1,0 +1,5 @@
+data_config:
+  h: 256 # height of input images
+  w: 256 # width of input images
+  c: 3 # number of channels of input images
+  time_step: 4 # number of time steps of input images

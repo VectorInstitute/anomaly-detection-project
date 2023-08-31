@@ -1,0 +1,17 @@
+experiment:
+  batch_size: 8 # batch size for training
+  test_batch_size: 1 # batch size for testing
+  epochs: 5 # number of epochs for training
+  c: 3 # number of channels of input images
+  lr: 0.0002 # initial learning rate
+  dim: 256 # channel dimension of the memory items
+  msize: 200 # number of the memory items
+  num_workers: 2 # number of workers for the train loader
+  num_workers_test: 1 # number of workers for the test loader
+  pin_memory: True # pinned memory for faster training, use more cpu
+  dataset_type: 'UCSDped2' # dataset type
+  background_path: '/ssd003/projects/aieng/public/anomaly_detection_datasets/UCSD_Anomaly_Dataset/UCSDped2/Background/bkg_UCSDped2.jpg' # directory of data
+  exp_dir: 'log' # directory of log
+  log_type: 'realtime' # type of log: txt, realtime
+  model_dir: '/ssd003/projects/aieng/public/anomaly_detection_models/UCSD/ped2_test_mine.pth' # directory of model
+  results_dir: './results' # directory of results
