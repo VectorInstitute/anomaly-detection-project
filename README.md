@@ -26,6 +26,12 @@ DGraph is a large-scale graph dataset specifically focused on fraud detection in
 
 DGraph consists of three million nodes in a graph, with over one million highly imbalanced ground-truth nodes considered anomalous. Only 1.3% of the nodes are considered anomalous, while the remaining two million users are considered background nodes. Each node represents a user and has a 17-dimensional feature vector derived from their personal information. The presence of an edge between two users signifies that one user regards the other as their emergency contact. Experiments in DGraph are conducted with different ratios of labeled anomalies to evaluate the effectiveness of anomaly detection algorithms.
 
+### UCSD Pedestrian
+
+The UCSD Anomaly Detection dataset is created by utilizing a fixed camera placed at an elevated position for observation, providing an overview of pedestrian walkways. The dataset was collected in a spacious walkway where pedestrians moved parallel to the camera plane. Across these walkways, the density of the crowd varied from sparse to becoming highly congested.
+
+The dataset comprises 16 training video samples and 12 testing video samples, each containing approximately 200 frames. The training videos contain only normal instances, while the testing videos contain both normal and anomalous instances. The anomalous instances include people running, bicycling, skating, and walking in groups. The dataset is designed to evaluate the performance of anomaly detection algorithms in crowded scenes.
+
 ## Getting Started
 
 To get started with the bootcamp and access the datasets, please follow the instructions provided in the respective dataset folders. Each dataset folder contains the necessary documentation, code examples, and data files required for the bootcamp sessions.
