@@ -55,6 +55,9 @@ class DMAD():
         f = open(os.path.join(self.log_dir, 'log.txt'),'w')
         if self.config['log_type'] == 'txt':
             sys.stdout = f
+        
+        if os.path.exists(self.config['results_dir']) == False: 
+            os.mkdir(self.config['results_dir'])
 
         self.train_dataset = train_dataset
         self.test_datasets = test_datasets
