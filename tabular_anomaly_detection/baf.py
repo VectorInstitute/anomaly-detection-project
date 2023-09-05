@@ -59,7 +59,7 @@ class BAFDataset:
         object_cols = list(s[s].index)
 
         # Initialize the one-hot encoder with 'ignore' for handling unknown categories in the test set
-        ohe = OneHotEncoder(sparse_output=False, handle_unknown='ignore')
+        ohe = OneHotEncoder(sparse=False, handle_unknown='ignore')
 
         # Apply one-hot encoding to the categorical features in the train and test sets
         ohe_cols_train = pd.DataFrame(ohe.fit_transform(X_train[object_cols]))
