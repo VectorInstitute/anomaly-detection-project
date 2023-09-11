@@ -65,7 +65,7 @@ def calculate_fairness_metrics(y_test, scored_test, X_test, fpr_lim=0.05):
     })
 
     # Calculate the fairness metrics
-    fairness_metrics = g.get_crosstabs(df, score_thresholds={"score": [obtained_threshold]})[0]
+    fairness_metrics = g.get_crosstabs(df, score_thresholds={"score_val": [obtained_threshold]})[0]
 
     # Calculate the fairness ratio as the min over max in FPR
     fairness_ratio = fairness_metrics["fpr"].min() / fairness_metrics["fpr"].max()
