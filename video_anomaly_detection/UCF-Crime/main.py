@@ -82,7 +82,7 @@ def test_abnormal(model, anomaly_test_loader, normal_test_loader):
             score = model(inputs)  # Assigning anomaly score to the given videos
             score = score.cpu().detach().numpy()
             score_list = np.zeros(frames[0])
-            step = np.round(np.linspace(0, frames[0] // 16, 33)) # Pass asigned score to 
+            step = np.round(np.linspace(0, frames[0] // 16, 33)) # 
             for j in range(32):
                 score_list[int(step[j]) * 16:(int(step[j + 1])) * 16] = score[j]
             gt_list = np.zeros(frames[0])

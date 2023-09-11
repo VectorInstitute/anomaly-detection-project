@@ -5,7 +5,7 @@ import random
 
 # Define a dataset class for loading normal data
 class Normal_dataset(Dataset):
-    def __init__(self, is_train=1, data_path='./UCF-Crime/', modality='TWO'):
+    def __init__(self, is_train=1, data_path='/ssd003/projects/aieng/public/anomaly_detection_datasets/UCF_crime/UCF-Crime-Features/', modality='TWO'):
         super().__init__()
         self.is_train = is_train
         self.data_path = data_path
@@ -65,7 +65,7 @@ class Normal_dataset(Dataset):
 
 # Define a dataset class for loading abnormal data
 class Abnormal_dataset(Dataset):
-    def __init__(self, is_train=1, data_path='./UCF-Crime/', modality='TWO'):
+    def __init__(self, is_train=1, data_path='/ssd003/projects/aieng/public/anomaly_detection_datasets/UCF_crime/UCF-Crime-Features/', modality='TWO'):
         self.is_train = is_train
         self.data_path = data_path
         self.modality = modality    
