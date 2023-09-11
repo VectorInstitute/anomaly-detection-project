@@ -77,14 +77,14 @@ def test_abnormal(model, anomaly_test_loader, normal_test_loader):
     epoch_auc = 0
     with torch.no_grad():
         for i, (data, data2) in enumerate(zip(anomaly_test_loader, normal_test_loader)):
-            inputs, gts, frames = data  #Extract graound truths and frame info
+            inputs, gts, frames = data  #Extract ground truths and frames info
             inputs = inputs.view(-1, inputs.size(-1)).to(torch.device('cuda'))
             score = model(inputs)  # Assigning anomaly score to the given videos
             score = score.cpu().detach().numpy()
             score_list = np.zeros(frames[0])
-            step = np.round(np.linspace(0, frames[0] // 16, 33)) # 
+            step = np.round(np.linspace(0, frames[0] // 16, 33))  
             for j in range(32):
-                score_list[int(step[j]) * 16:(int(step[j + 1])) * 16] = score[j]
+                score_list[int(step[j]) * 16:(int(step[j + 1])) * 16] = score[j] #Passing the assigned anomaly score to the 16 frames containing each video instance
             gt_list = np.zeros(frames[0])
             for k in range(len(gts) // 2):
                 s = gts[k * 2]
