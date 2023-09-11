@@ -42,7 +42,6 @@ class Learner(nn.Module):
         # Custom forward method for the network
         if vars is None:
             vars = self.vars
-        
         # Apply linear transformation followed by ReLU activation and dropout for the first layer
         x = F.linear(x, vars[0], vars[1])
         x = F.relu(x)

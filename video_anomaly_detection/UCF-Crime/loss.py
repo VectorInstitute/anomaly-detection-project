@@ -29,7 +29,7 @@ def MIL(y_pred, batch_size, is_transformer=0):
         y_normal_min = torch.min(y_normal)
         # Calculate the loss component using hinge loss
         loss += F.relu(1.-y_anomaly_max+y_normal_max)
-        # Calculate sparsity and smoothness regularization term
+        # Calculate sparsity and smoothness regularization terms
         sparsity += torch.sum(y_anomaly)*0.00008
         smooth += torch.sum((y_pred[i,:31] - y_pred[i,1:32])**2)*0.00008
     # Combine all loss components and divide by batch size
