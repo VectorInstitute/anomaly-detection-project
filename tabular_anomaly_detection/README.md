@@ -38,41 +38,39 @@ The `BAFDataset` class streamlines the process of preparing the BAF dataset for 
 
 # Models for Fraud Detection
 
-## Logistic Regression
+## Logistic Regression (Supervised)
 
 Logistic regression is a popular statistical model used for binary classification tasks. It estimates the probability that an observation belongs to a certain class based on a set of input features.
 
-## Random Forest
+## Random Forest (Supervised)
 
 Random forest is a powerful ensemble learning algorithm used for both classification and regression tasks. It combines multiple decision trees to make predictions.
 
-## XGBoost
+## XGBoost (Supervised)
 
 XGBoost (Extreme Gradient Boosting) is an advanced implementation of gradient boosting, known for its exceptional performance and efficiency.
 
-## CatBoost
+## CatBoost (Supervised)
 
 CatBoost is a gradient boosting framework developed by Yandex that is particularly well-suited for working with categorical features.
 
-## Light GBM
+## Light GBM (Supervised)
 
 Light GBM (Light Gradient Boosting Machine) is a gradient boosting framework known for its high performance and efficiency for machine learning tasks.
 
-## TabNet
+## TabNet (Supervised and Semi-supervised)
 
 TabNet presents an innovative approach that bridges the gap between Decision Trees (DTs) and Deep Neural Networks (DNNs).
 
-# Unsupervised Anomaly Detection
-
-## Autoencoder (AE)
+## Autoencoder (AE) (Unsupervised)
 
 The autoencoder is a neural network designed to learn a compressed representation of input data and reconstruct the original data from this representation.
 
-## Isolation Forest (IF)
+## Isolation Forest (IF) (Unsupervised)
 
 The Isolation Forest algorithm is used for spotting anomalies within datasets. It constructs a forest of isolation trees where data points are partitioned based on random feature choices and values.
 
-## ICL
+## ICL (Unsupervised)
 
 ICL focuses on out-of-class sample detection in tabular data, aiming to capture the structure of single training class samples by learning mappings that maximize mutual information between each sample and the masked-out portion.
 
