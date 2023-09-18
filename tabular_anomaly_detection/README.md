@@ -1,6 +1,6 @@
 # BAF Dataset Analysis and Fraud Detection
 
-Welcome to this reference implementation where we embark on a comprehensive analysis of the BAF dataset and explore fraud detection in online bank account openings. First, we will delve into a detailed description of the [BAF dataset](https://arxiv.org/pdf/2211.13358.pdf), which centers around detecting fraudulent applications in a large consumer bank. Next, we will explore the methods employed to address fraud detection, taking into account both performance aspects and fairness considerations.
+Welcome to these reference implementations where we embark on a comprehensive analysis of the BAF dataset and explore fraud detection in online bank account openings. In `BAF-demo-1.ipynb`, we will delve into a detailed description of the [BAF dataset](https://arxiv.org/pdf/2211.13358.pdf), which centers around detecting fraudulent applications in a large consumer bank and explore machine learning-based methods employed to address fraud detection. In `BAF-demo-2.ipynb`, we will further dive into deep learning-based methodologies applied to the same dataset.
 
 ## Dataset Overview
 
@@ -89,4 +89,3 @@ Here are the results for various models and their performance metrics on `Base` 
 | AE    | 0.0629  | 0.0498  | 1837.917969 | 0.6143 | 0.3692         | 50.658261     | 0.110126        |
 | IF | 0.0806  | 0.0499  | 0.015500  | 0.5816 | 0.2516         | 0.915280      | 1.485850        |
 | ICL | 0.0865 | 0.0499  | 3.126800  | 0.6172 | 0.9953         | 1137.885359   | 21.296762       |
-
