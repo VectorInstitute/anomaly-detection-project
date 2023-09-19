@@ -36,7 +36,7 @@ The `BAFDataset` class provides a convenient way to load, preprocess, and split 
 
 The `BAFDataset` class streamlines the process of preparing the BAF dataset for machine learning experiments, handling loading, train-test splitting, and preprocessing tasks in a clear and organized manner.
 
-# Models for Fraud Detection
+# Models for Anomaly Detection
 
 ## Logistic Regression (Supervised)
 
@@ -78,14 +78,14 @@ ICL focuses on out-of-class sample detection in tabular data, aiming to capture 
 
 Here are the results for various models and their performance metrics on `Base` variant of BAF dataset:
 
-| Model               | TPR     | FPR     | Threshold | AUROC  | Fairness Ratio | Training Time | Inference Time |
-|---------------------|---------|---------|-----------|--------|----------------|---------------|-----------------|
-| Logistic Regression | 0.2074  | 0.0497  | 0.112200  | 0.6802 | 0.3455         | 18.675150     | 0.080438        |
-| Random Forest       | 0.4288  | 0.0415  | 0.090000  | 0.8398 | 0.3007         | 283.078872    | 3.608654        |
-| XGBoost             | 0.5049  | 0.0498  | 0.041100  | 0.8787 | 0.3233         | 307.644614    | 0.549125        |
-| CatBoost            | 0.5101  | 0.0499  | 0.037300  | 0.8836 | 0.2992         | 198.038225    | 0.373308        |
-| Light GBM           | 0.5302  | 0.0500  | 0.040400  | 0.8898 | 0.3017         | 13.898896     | 1.010416        |
-| TabNet              | 0.5069  | 0.0500  | 0.028200  | 0.8822 | 0.3459         | 666.011628    | 6.612230        |
-| AE    | 0.0629  | 0.0498  | 1837.917969 | 0.6143 | 0.3692         | 50.658261     | 0.110126        |
-| IF | 0.0806  | 0.0499  | 0.015500  | 0.5816 | 0.2516         | 0.915280      | 1.485850        |
-| ICL | 0.0865 | 0.0499  | 3.126800  | 0.6172 | 0.9953         | 1137.885359   | 21.296762       |
+| Model               | TPR     | FPR     | AUROC  | Fairness Ratio | Training Time | Inference Time |
+|---------------------|---------|---------|--------|----------------|---------------|-----------------|
+| Logistic Regression | 0.2074  | 0.0497  | 0.6802 | 0.3455         | 18.675150     | 0.080438        |
+| Random Forest       | 0.4288  | 0.0415  | 0.8398 | 0.3007         | 283.078872    | 3.608654        |
+| XGBoost             | 0.5049  | 0.0498  | 0.8787 | 0.3233         | 307.644614    | 0.549125        |
+| CatBoost            | 0.5101  | 0.0499  | 0.8836 | 0.2992         | 198.038225    | 0.373308        |
+| Light GBM           | 0.5302  | 0.0500  | 0.8898 | 0.3017         | 13.898896     | 1.010416        |
+| TabNet              | 0.5069  | 0.0500  | 0.8822 | 0.3459         | 666.011628    | 6.612230        |
+| AE    | 0.0629  | 0.0498  | 0.6143 | 0.3692         | 50.658261     | 0.110126        |
+| IF | 0.0806  | 0.0499 | 0.5816 | 0.2516         | 0.915280      | 1.485850        |
+| ICL | 0.0865 | 0.0499 | 0.6172 | 0.9953         | 1137.885359   | 21.296762       |
