@@ -1,6 +1,6 @@
-# BAF Dataset Analysis and Fraud Detection
+# BAF Demo
 
-Welcome to these reference implementations where we embark on a comprehensive analysis of the BAF dataset and explore fraud detection in online bank account openings. In `BAF-demo-1.ipynb`, we will delve into a detailed description of the [BAF dataset](https://arxiv.org/pdf/2211.13358.pdf), which centers around detecting fraudulent applications in a large consumer bank and explore machine learning-based methods employed to address fraud detection. In `BAF-demo-2.ipynb`, we will further dive into deep learning-based methodologies applied to the same dataset.
+Welcome to Bank Account Fraud (BAF) demo where we provide two reference implementations to do a comprehensive analysis of this dataset and explore fraud detection in online bank account openings. In `BAF-demo-1.ipynb`, we will delve into a detailed description of the [BAF dataset](https://arxiv.org/pdf/2211.13358.pdf), which centers around detecting fraudulent applications in a large consumer bank and explore machine learning-based methods for fraud detection. In `BAF-demo-2.ipynb`, we will further dive into deep learning-based methodologies applied to the same dataset.
 
 ## Dataset Overview
 
@@ -10,9 +10,7 @@ The dataset consists of individual applications, with each row representing an a
 
 ## Data Generation and Privacy Preservation
 
-To produce the dataset, a generative model is trained with some original features. These features are the top thirty most important features selected from the top-performing LightGBM models, considering expressiveness, interpretability, and redundancy. Differential privacy is enforced by perturbing each column in the original dataset using a Laplacian noise mechanism. Additional obfuscation measures are applied to certain applicant data, such as age and income categorization, to enhance privacy.
-
-## Generative Models
+To produce the dataset, CTGAN models are trained with some original features. These features are the top thirty most important features selected from the top-performing LightGBM models, considering expressiveness, interpretability, and redundancy. Differential privacy is enforced by perturbing each column in the original dataset using a Laplacian noise mechanism. Additional obfuscation measures are applied to certain applicant data, such as age and income categorization, to enhance privacy.
 
 The CTGAN models are trained on the perturbed dataset with the selected features, and the dataset is augmented with a column representing the month of application to incorporate temporal information. A total of 70 trained CTGAN models are created, and the generative models are evaluated based on predictive performance metrics and statistical similarity between the real and generated data.
 
