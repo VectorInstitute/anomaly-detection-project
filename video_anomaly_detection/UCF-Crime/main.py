@@ -124,7 +124,7 @@ def main():
     model, optimizer, scheduler, criterion = initialize_model_optimizer(args)
     for epoch in range(0, 75):
         train_loss = train_one_epoch(model, optimizer, scheduler, criterion, normal_train_loader, anomaly_train_loader, device)
-        # print(f'Epoch {epoch}: train_loss = {train_loss:.4f}')
+        print(f'Epoch {epoch}: train_loss = {train_loss:.4f}',)
         test_abnormal(model, anomaly_test_loader, normal_test_loader)
 
 if __name__ == "__main__":
