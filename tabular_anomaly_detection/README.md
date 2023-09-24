@@ -1,6 +1,6 @@
-# BAF Dataset Analysis and Fraud Detection
+# BAF Demo
 
-Welcome to this reference implementation where we embark on a comprehensive analysis of the BAF dataset and explore fraud detection in online bank account openings. First, we will delve into a detailed description of the [BAF dataset](https://arxiv.org/pdf/2211.13358.pdf), which centers around detecting fraudulent applications in a large consumer bank. Next, we will explore the methods employed to address fraud detection, taking into account both performance aspects and fairness considerations.
+Welcome to Bank Account Fraud (BAF) demo where we provide two reference implementations to do a comprehensive analysis of this dataset and explore fraud detection in online bank account openings. In `BAF-demo-1.ipynb`, we will delve into a detailed description of the [BAF dataset](https://arxiv.org/pdf/2211.13358.pdf), which centers around detecting fraudulent applications in a large consumer bank and explore machine learning-based methods for fraud detection. In `BAF-demo-2.ipynb`, we will further dive into deep learning-based methodologies applied to the same dataset.
 
 ## Dataset Overview
 
@@ -10,9 +10,7 @@ The dataset consists of individual applications, with each row representing an a
 
 ## Data Generation and Privacy Preservation
 
-To produce the dataset, a generative model is trained with some original features. These features are the top thirty most important features selected from the top-performing LightGBM models, considering expressiveness, interpretability, and redundancy. Differential privacy is enforced by perturbing each column in the original dataset using a Laplacian noise mechanism. Additional obfuscation measures are applied to certain applicant data, such as age and income categorization, to enhance privacy.
-
-## Generative Models
+To produce the dataset, CTGAN models are trained with some original features. These features are the top thirty most important features selected from the top-performing LightGBM models, considering expressiveness, interpretability, and redundancy. Differential privacy is enforced by perturbing each column in the original dataset using a Laplacian noise mechanism. Additional obfuscation measures are applied to certain applicant data, such as age and income categorization, to enhance privacy.
 
 The CTGAN models are trained on the perturbed dataset with the selected features, and the dataset is augmented with a column representing the month of application to incorporate temporal information. A total of 70 trained CTGAN models are created, and the generative models are evaluated based on predictive performance metrics and statistical similarity between the real and generated data.
 
@@ -36,43 +34,41 @@ The `BAFDataset` class provides a convenient way to load, preprocess, and split 
 
 The `BAFDataset` class streamlines the process of preparing the BAF dataset for machine learning experiments, handling loading, train-test splitting, and preprocessing tasks in a clear and organized manner.
 
-# Models for Fraud Detection
+# Models for Anomaly Detection
 
-## Logistic Regression
+## Logistic Regression (Supervised)
 
 Logistic regression is a popular statistical model used for binary classification tasks. It estimates the probability that an observation belongs to a certain class based on a set of input features.
 
-## Random Forest
+## Random Forest (Supervised)
 
 Random forest is a powerful ensemble learning algorithm used for both classification and regression tasks. It combines multiple decision trees to make predictions.
 
-## XGBoost
+## XGBoost (Supervised)
 
 XGBoost (Extreme Gradient Boosting) is an advanced implementation of gradient boosting, known for its exceptional performance and efficiency.
 
-## CatBoost
+## CatBoost (Supervised)
 
 CatBoost is a gradient boosting framework developed by Yandex that is particularly well-suited for working with categorical features.
 
-## Light GBM
+## Light GBM (Supervised)
 
 Light GBM (Light Gradient Boosting Machine) is a gradient boosting framework known for its high performance and efficiency for machine learning tasks.
 
-## TabNet
+## TabNet (Supervised and Semi-supervised)
 
 TabNet presents an innovative approach that bridges the gap between Decision Trees (DTs) and Deep Neural Networks (DNNs).
 
-# Unsupervised Anomaly Detection
-
-## Autoencoder (AE)
+## Autoencoder (AE) (Unsupervised)
 
 The autoencoder is a neural network designed to learn a compressed representation of input data and reconstruct the original data from this representation.
 
-## Isolation Forest (IF)
+## Isolation Forest (IF) (Unsupervised)
 
 The Isolation Forest algorithm is used for spotting anomalies within datasets. It constructs a forest of isolation trees where data points are partitioned based on random feature choices and values.
 
-## ICL
+## ICL (Unsupervised)
 
 ICL focuses on out-of-class sample detection in tabular data, aiming to capture the structure of single training class samples by learning mappings that maximize mutual information between each sample and the masked-out portion.
 
@@ -80,15 +76,14 @@ ICL focuses on out-of-class sample detection in tabular data, aiming to capture 
 
 Here are the results for various models and their performance metrics on `Base` variant of BAF dataset:
 
-| Model               | TPR     | FPR     | Threshold | AUROC  | Fairness Ratio | Training Time | Inference Time |
-|---------------------|---------|---------|-----------|--------|----------------|---------------|-----------------|
-| Logistic Regression | 0.2074  | 0.0497  | 0.112200  | 0.6802 | 0.3455         | 18.675150     | 0.080438        |
-| Random Forest       | 0.4288  | 0.0415  | 0.090000  | 0.8398 | 0.3007         | 283.078872    | 3.608654        |
-| XGBoost             | 0.5049  | 0.0498  | 0.041100  | 0.8787 | 0.3233         | 307.644614    | 0.549125        |
-| CatBoost            | 0.5101  | 0.0499  | 0.037300  | 0.8836 | 0.2992         | 198.038225    | 0.373308        |
-| Light GBM           | 0.5302  | 0.0500  | 0.040400  | 0.8898 | 0.3017         | 13.898896     | 1.010416        |
-| TabNet              | 0.5069  | 0.0500  | 0.028200  | 0.8822 | 0.3459         | 666.011628    | 6.612230        |
-| AE    | 0.0629  | 0.0498  | 1837.917969 | 0.6143 | 0.3692         | 50.658261     | 0.110126        |
-| IF | 0.0806  | 0.0499  | 0.015500  | 0.5816 | 0.2516         | 0.915280      | 1.485850        |
-| ICL | 0.0865 | 0.0499  | 3.126800  | 0.6172 | 0.9953         | 1137.885359   | 21.296762       |
-
+| Model               | TPR     | FPR     | AUROC  | Fairness Ratio | Training Time | Inference Time |
+|---------------------|---------|---------|--------|----------------|---------------|-----------------|
+| Logistic Regression | 0.2074  | 0.0497  | 0.6802 | 0.3455         | 18.675150     | 0.080438        |
+| Random Forest       | 0.4288  | 0.0415  | 0.8398 | 0.3007         | 283.078872    | 3.608654        |
+| XGBoost             | 0.5049  | 0.0498  | 0.8787 | 0.3233         | 307.644614    | 0.549125        |
+| CatBoost            | 0.5101  | 0.0499  | 0.8836 | 0.2992         | 198.038225    | 0.373308        |
+| Light GBM           | 0.5302  | 0.0500  | 0.8898 | 0.3017         | 13.898896     | 1.010416        |
+| TabNet              | 0.5069  | 0.0500  | 0.8822 | 0.3459         | 666.011628    | 6.612230        |
+| AE    | 0.0629  | 0.0498  | 0.6143 | 0.3692         | 50.658261     | 0.110126        |
+| IF | 0.0806  | 0.0499 | 0.5816 | 0.2516         | 0.915280      | 1.485850        |
+| ICL | 0.0865 | 0.0499 | 0.6172 | 0.9953         | 1137.885359   | 21.296762       |
