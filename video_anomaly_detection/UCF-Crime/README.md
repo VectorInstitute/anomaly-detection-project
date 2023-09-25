@@ -1,7 +1,13 @@
 # Anomaly Detection on UCF-Crime Dataset
 
 ## Introduction
-This repository contains the code and resources for performing video-level anomaly detection on the UCF-Crime dataset. The goal is to identify unusual or anomalous activities within video sequences.
+This repository contains the code and resources for performing video-level anomaly detection on the UCF-Crime dataset. The UCF-Crime dataset is a widely recognized benchmark in the domain of video anomaly detection and abnormal event recognition in surveillance videos. Comprising a diverse collection of real-world video clips captured from various surveillance cameras, it offers a substantial 128 hours of video content, providing a comprehensive representation of intricate and varied anomalies encountered in complex environments. 
 
-## Dataset
-The UCF-Crime dataset is a widely recognized benchmark in the domain of video anomaly detection and abnormal event recognition in surveillance videos. Comprising a diverse collection of real-world video clips captured from various surveillance cameras, it offers a substantial 128 hours of video content, providing a comprehensive representation of intricate and varied anomalies encountered in complex environments. 
+## Structure
+The following is the structure of the UCF-Crime directory:
+
+* [dataset.py](./UCF-Crime/dataset.py): contains code for loading extracted features from the UCF-Crime dataset.
+* [learner.py](./UCF-Crime/learner.py): contains code to implement a weakly supervised anomaly detection model based on the Multiple Instance Learning (MIL) framework.
+* [loss.py](./UCF-Crime/loss.py): contains code for a custom loss function within the MIL framework
+* [main.py](./UCF-Crime/main.py): contains code for training and testing the implemented anomaly detection (AD) method
+<!-- * [UCF-Crime_demo.ipynb](./UCSDPedestraian/UCSDPedestrain_demo.ipynb): a notebook to experiment with MIL algorithm -->
