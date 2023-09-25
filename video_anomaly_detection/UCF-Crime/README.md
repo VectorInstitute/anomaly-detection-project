@@ -1,4 +1,5 @@
-# Anomaly Detection on UCF-Crime Dataset
+# UCF-Crime Anomaly Detection Bootcamp
+
 
 ## Introduction
 This repository contains the code and resources for performing video-level anomaly detection on the UCF-Crime dataset. 
@@ -9,7 +10,6 @@ One of the most famouse large-scale dataset video anomaly detection dataset with
 ## Model Architecture
 We utilized a two-stream Inflated 3D (I3D) Convolutional Network to extract RGB and Flow features from the video. The RGB stream extracts information related to the appearance of objects and scenes, while the optical Flow stream captures the motion and dynamics of objects between frames. We then combined
 the information from both streams by concatenating the learned RGB and Flow features. This provides a more complete understanding of the video content, leading to improved anomaly detection accuracy.
-
 To avoid annotating abnormal activities in training videos, a weakly supervised anomaly detection
 model was implemented based on the Multiple Instance Learning (MIL) framework. The
 model considers normal and abnormal videos as bags and video clips as instances. It learns a
