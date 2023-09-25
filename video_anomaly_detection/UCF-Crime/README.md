@@ -16,7 +16,7 @@ model considers normal and abnormal videos as bags and video clips as instances.
 ranking model to predict high anomaly scores for video clips containing anomalies.
 
 
-![proposedmethod](https://github.com/VectorInstitute/anomaly-detection-project/assets/23232055/ff15b1e8-00e5-403a-bff9-3426d8acb7a4)
+![proposedmethod](https://github.com/VectorInstitute/anomaly-detection-project/assets/23232055/ff15b1e8-00e5-403a-bff9-3426d8acb7a4 | width=300)
 
 ## Structure
 The following is the structure of the UCF-Crime directory:
