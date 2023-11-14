@@ -33,7 +33,7 @@ The UCSD Anomaly Detection dataset is created by utilizing a fixed camera placed
 The dataset comprises 16 training video samples and 12 testing video samples, each containing approximately 200 frames. The training videos contain only normal instances, while the testing videos contain both normal and anomalous instances. The anomalous instances include people running, bicycling, skating, and walking in groups. The dataset is designed to evaluate the performance of anomaly detection algorithms in crowded scenes.
 
 ### UCF-Crime
-One of the most famouse large-scale dataset video anomaly detection dataset with video-level labels is [UCF-crime](https://www.crcv.ucf.edu/projects/real-world/) dataset. The total length of the videos is 128 hours, which contains 13 classes of anomalous events including: 1. Abuse, 2. Arrest, 3. Arson, 4. Assault, 5. Burglary, 6. Explosion, 7. Fighting, 8. Road Accident, 9. Robbery, 10. Shooting, 11. Stealing, 12. Shoplifting, 13. Vandalism.
+One of the most famouse large-scale dataset video anomaly detection dataset with video-level labels is UCF-crime dataset. The total length of the videos is 128 hours, which contains 13 classes of anomalous events including: 1. Abuse, 2. Arrest, 3. Arson, 4. Assault, 5. Burglary, 6. Explosion, 7. Fighting, 8. Road Accident, 9. Robbery, 10. Shooting, 11. Stealing, 12. Shoplifting, 13. Vandalism.
 
 The UCF-Crime dataset consists of 1900 surveillance videos, with the training set consisting of 800 normal videos and 810 abnormal videos. The testing set includes 150 normal videos and 140 anomaly videos, covering all 13 anomaly categories in both sets. 
 
