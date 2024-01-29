@@ -1,4 +1,4 @@
-# UCSDPedestrain Anomaly Detection Bootcamp
+# UCSD Pedestrain - Video Anomaly Detection Demo
 
 ## Introduction
 

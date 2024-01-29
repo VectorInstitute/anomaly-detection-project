@@ -1,4 +1,4 @@
-# DGraph Anomaly Detection Bootcamp
+# DGraph - Graph Anomaly Detection Demo
 
 ## Introduction
 

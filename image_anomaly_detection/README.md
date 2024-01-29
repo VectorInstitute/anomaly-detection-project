@@ -1,5 +1,5 @@
 
-# Anomaly Detection Bootcamp
+# MVTec - Image Anomaly Detection Demo
 
 This repository contains a Jupyter Notebook that demonstrates two different methods for anomaly detection: CFA Coupled-hypersphere-based Feature Adaptation for Target-Oriented Anomaly Localization and Fully Convolutional Cross-Scale-Flows for Image-based Defect Detection. The methods are implemented using the `anomalib` library in Python.
 

@@ -1,4 +1,4 @@
-# UCF-Crime Anomaly Detection Bootcamp
+# UCF Crime - Video Anomaly Detection Demo
 
 
 ## Introduction
