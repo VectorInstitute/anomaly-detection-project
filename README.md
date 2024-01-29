@@ -8,11 +8,7 @@ Anomaly detection is the process of identifying patterns or instances that devia
 
 ## Datasets
 
-The bootcamp utilizes four diverse datasets to cover a broad range of anomaly detection applications. Each dataset offers unique challenges and opportunities for participants to explore and experiment with different techniques.
-
-### MVTec AD
-
-The MVTec AD dataset serves as a benchmark for anomaly detection and segmentation in images. It consists of 5,000 high-resolution images, categorized into fifteen different object and texture categories. Each category comprises a set of normal training images and a test set containing images with various defects, as well as defect-free images. Participants will work with this dataset to develop image-based anomaly detection models.
+The bootcamp utilizes five diverse datasets to cover a broad range of anomaly detection applications. Each dataset offers unique challenges and opportunities for participants to explore and experiment with different techniques.
 
 ### Bank Account Fraud (BAF)
 
@@ -25,6 +21,10 @@ Each set in the BAF datasets consist of one million instances with thirty featur
 DGraph is a large-scale graph dataset specifically focused on fraud detection in real-world finance scenarios. The dataset is provided by Finvolution Group, a prominent player in China's online consumer finance industry. Each user's raw data in DGraph includes five components: user ID, basic personal profile information, telephone number, borrowing behavior, and emergency contacts.
 
 DGraph consists of three million nodes in a graph, with over one million highly imbalanced ground-truth nodes considered anomalous. Only 1.3% of the nodes are considered anomalous, while the remaining two million users are considered background nodes. Each node represents a user and has a 17-dimensional feature vector derived from their personal information. The presence of an edge between two users signifies that one user regards the other as their emergency contact. Experiments in DGraph are conducted with different ratios of labeled anomalies to evaluate the effectiveness of anomaly detection algorithms.
+
+### MVTec AD
+
+The MVTec AD dataset serves as a benchmark for anomaly detection and segmentation in images. It consists of 5,000 high-resolution images, categorized into fifteen different object and texture categories. Each category comprises a set of normal training images and a test set containing images with various defects, as well as defect-free images. Participants will work with this dataset to develop image-based anomaly detection models.
 
 ### UCSD Pedestrian
 
