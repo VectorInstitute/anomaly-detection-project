@@ -1,4 +1,4 @@
-# UCF Crime - Video Anomaly Detection Demo
+# UCF Crime - Weakly Supervised Video Anomaly Detection Demo
 
 
 ## Introduction

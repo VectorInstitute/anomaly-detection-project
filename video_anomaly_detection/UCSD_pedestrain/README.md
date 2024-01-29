@@ -1,4 +1,4 @@
-# UCSD Pedestrain - Video Anomaly Detection Demo
+# UCSD Pedestrain - Unsupervised Video Anomaly Detection Demo
 
 ## Introduction
 
