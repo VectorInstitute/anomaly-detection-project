@@ -20,7 +20,7 @@ the commands below:
 pip install uv
 uv venv
 source .venv/bin/activate
-pip install --upgrade pip setuptools
+uv pip install --upgrade pip setuptools wheel torch~="1.13.0"
 uv sync --no-install-project --no-build-isolation
 ```
 
