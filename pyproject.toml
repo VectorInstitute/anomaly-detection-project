@@ -36,6 +36,7 @@ dependencies = [
     "opencv-python~=4.8.0.74",
     "torchvision~=0.14.0",
     "pillow~=9.2.0",
+    "setuptools",
 ]
 
 [build-system]
