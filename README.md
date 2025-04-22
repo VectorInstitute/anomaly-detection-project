@@ -16,7 +16,7 @@ We hope this bootcamp provides a valuable learning experience in the exciting fi
 
 We use [uv](https://github.com/astral-sh/uv) to manage dependencies. Make the virtual environment and install the dependencies with the commands below:
 ```shell
-pip install uv
+pip install uv==0.6.16
 uv venv
 source .venv/bin/activate
 uv pip install --upgrade pip setuptools wheel torch~="1.13.0"
