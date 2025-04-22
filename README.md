@@ -14,8 +14,7 @@ We hope this bootcamp provides a valuable learning experience in the exciting fi
 
 ### Installing dependencies
 
-We use [uv](https://github.com/astral-sh/uv) to manage dependencies. Install the dependencies and init the environment with
-the commands below:
+We use [uv](https://github.com/astral-sh/uv) to manage dependencies. Make the virtual environment and install the dependencies with the commands below:
 ```shell
 pip install uv
 uv venv
