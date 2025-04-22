@@ -14,31 +14,14 @@ We hope this bootcamp provides a valuable learning experience in the exciting fi
 
 ### Installing dependencies
 
-1. Make sure you have the right version of Python. This project requires [Python 3.7](https://www.python.org/downloads/release/python-31017/). 
-
-> [!TIP]
-> Use [pyenv](https://github.com/pyenv/pyenv) to install multiple Python versions in your system.
-
-2. In the root of the project, create a virtual environment and activate it:
-
-```shell
-python -m venv venv
-source venv/bin/activate
-```
-
-3. We use [Poetry](https://python-poetry.org/) as our dependency management system. Install it with the commands below:
+We use [uv](https://github.com/astral-sh/uv) to manage dependencies. Install the dependencies and init the environment with
+the commands below:
 ```shell
 pip install --upgrade pip
-pip install poetry
+pip install uv
+uv sync --no-install-project --no-build-isolation
+source .venv/bin/activate
 ```
-
-4. Install the project dependencies:
-```shell
-python -m poetry install --no-root
-pip install wheel
-pip install --no-build-isolation torch-sparse=="0.6.17"
-```
-
 
 ## Datasets
 
