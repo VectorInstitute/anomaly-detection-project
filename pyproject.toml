@@ -28,7 +28,7 @@ dependencies = [
     "ipython~=7.31.1",
     "gitpython~=3.1.32",
     "lightgbm~=3.3.5",
-    "catboost~=1.2",
+    "catboost==1.2",
     "pytorch-tabnet~=4.1.0",
     "aequitas~=0.42.0",
     "matplotlib~=3.5.2",
@@ -37,6 +37,8 @@ dependencies = [
     "torchvision~=0.14.0",
     "pillow~=9.2.0",
     "torch-sparse~=0.6.17",
+    "jupyter~=1.0.0",
+    "ipykernel~=6.15.2",
 ]
 
 [build-system]
