@@ -197,7 +197,7 @@ requires-dist = [
     { name = "rtdl", specifier = "~=0.0.13" },
     { name = "scikit-learn", specifier = "~=1.0.2" },
     { name = "scipy", specifier = "~=1.7.3" },
-    { name = "setuptools" },
+    { name = "setuptools", specifier = "~=75.3.2" },
     { name = "torch", specifier = "~=1.13.0" },
     { name = "torch-geometric", specifier = "~=2.3.1" },
     { name = "torch-sparse", specifier = "~=0.6.17" },

@@ -17,10 +17,11 @@ We hope this bootcamp provides a valuable learning experience in the exciting fi
 We use [uv](https://github.com/astral-sh/uv) to manage dependencies. Install the dependencies and init the environment with
 the commands below:
 ```shell
-pip install --upgrade pip
 pip install uv
-uv sync --no-install-project --no-build-isolation
+uv venv
 source .venv/bin/activate
+pip install --upgrade pip setuptools
+uv sync --no-install-project --no-build-isolation
 ```
 
 ## Datasets
