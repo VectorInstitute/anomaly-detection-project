@@ -39,6 +39,7 @@ dependencies = [
     "torch-sparse~=0.6.17",
     "jupyter~=1.0.0",
     "ipykernel~=6.15.2",
+    "deepod~=0.3.0",
 ]
 
 [build-system]
