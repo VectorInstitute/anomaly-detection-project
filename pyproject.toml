@@ -40,6 +40,9 @@ dependencies = [
     "jupyter~=1.0.0",
     "ipykernel~=6.15.2",
     "deepod~=0.3.0",
+    "numba~=0.55.1",
+    "dill~=0.3.4",
+    "torch-scatter~=2.1.1",
 ]
 
 [build-system]
