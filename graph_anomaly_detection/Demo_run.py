@@ -12,12 +12,15 @@ from Dataset.prepare_data import DataGenerator
 from myutils import Utils
 
 class RunPipeline():
-    def __init__(self, dir:str,
-                 suffix:str,
-                 model_type:str,
-                supervision:str, 
-                seed_list:list, 
-                rla_list:list):
+    def __init__(
+        self,
+        dir: str,
+        suffix: str,
+        model_type: str,
+        supervision: str, 
+        seed_list: list, 
+        rla_list:list,
+    ):
         '''
         The class to run the pipeline
         
@@ -172,7 +175,7 @@ class RunPipeline():
         return time_fit, time_inference, result
 
     # run the experiment
-    def run(self,model_name:str=None):
+    def run(self, model_name: str = None):
         #  filteting dataset that does not meet the experimental requirements
         self.data_generator.dataset =  'DgraphFin'
        
@@ -269,9 +272,13 @@ rla_list = [float(item) for item in args.rla_list.split(',')]
 
 print('rla_list',rla_list)
 
-pipeline = RunPipeline(dir = args.dir ,suffix=args.suffix,model_type=args.model_type,
-                    supervision=args.supervision, 
-                    seed_list=seed_list, 
-                    rla_list=rla_list)
+pipeline = RunPipeline(
+    dir = args.dir,
+    suffix=args.suffix,
+    model_type=args.model_type,
+    supervision=args.supervision, 
+    seed_list=seed_list, 
+    rla_list=rla_list,
+)
 
 pipeline.run(model_name=args.model_name)
