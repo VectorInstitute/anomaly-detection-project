@@ -2,23 +2,23 @@
 
 ## Introduction
 
-This repository contains codes to run the frame-level vidoe anomaly detection method on the UCSD pedestrain dataset. UCSD pedestrain was collected in a spacious walkway where pedestrians moved parallel to the camera plane using a statiionary camera.
+This repository contains codes to run the frame-level video anomaly detection method on the UCSD pedestrain dataset. UCSD pedestrain was collected in a spacious walkway where pedestrians moved parallel to the camera plane using a stationary camera.
 
 
 ## Structure
 The following is the directory structure of the UCSDPedestrain directory:
 
 
-* [DMAD/](./UCSDPedestraian/DMAD) ==> contains codes for diversity measurable anomaly detection method
-  * [model.py](./UCSDPedestraian/DMAD/model.py) ==> contains codes for DMAD model
-  * [model_config.yaml](./UCSDPedestraian/DMAD/model_config.yaml) ==> contains config to run DMAD algorithm
-  * [run.py](./UCSDPedestraian/DMAD/run.py) ==> contains codes to run DMAD algorithm
-* [Dataset/](./UCSDPedestraian/Dataset) ==> contains codes to prepare the UCSD dataset
-  * [UCSD_dataset.py](./UCSDPedestraian/Dataset/UCSD_dataset.py) ==> contains codes to get the train and test dataset
-  * [data_config.yaml](./UCSDPedestraian/Dataset/data_config.yaml) ==> contains config to get UCSD dataset
-* [Demo_run.py](./UCSDPedestraian/Demo_run.py) ==> a python file to run and evaluate DMAD algorithm from terminal
-* [UCSDPedestrain_demo.ipynb](./UCSDPedestraian/UCSDPedestrain_demo.ipynb) ==> a notebook to experiment with DMAD algorithm
-* [utils.py](./UCSDPedestraian/utils.py) ==> contains some utility functions
+* [DMAD/](./UCSDPedestrian/DMAD) ==> contains codes for diversity measurable anomaly detection method
+  * [model.py](./UCSDPedestrian/DMAD/model.py) ==> contains codes for DMAD model
+  * [model_config.yaml](./UCSDPedestrian/DMAD/model_config.yaml) ==> contains config to run DMAD algorithm
+  * [run.py](./UCSDPedestrian/DMAD/run.py) ==> contains codes to run DMAD algorithm
+* [Dataset/](./UCSDPedestrian/Dataset) ==> contains codes to prepare the UCSD dataset
+  * [UCSD_dataset.py](./UCSDPedestrian/Dataset/UCSD_dataset.py) ==> contains codes to get the train and test dataset
+  * [data_config.yaml](./UCSDPedestrian/Dataset/data_config.yaml) ==> contains config to get UCSD dataset
+* [Demo_run.py](./UCSDPedestrian/Demo_run.py) ==> a python file to run and evaluate DMAD algorithm from terminal
+* [UCSDPedestrain_demo.ipynb](./UCSDPedestrian/UCSDPedestrian_demo.ipynb) ==> a notebook to experiment with DMAD algorithm
+* [utils.py](./UCSDPedestrian/utils.py) ==> contains some utility functions
 
 
 

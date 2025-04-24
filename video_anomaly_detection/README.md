@@ -9,4 +9,4 @@ In this repository, we provide codes to run two categories of video anomaly dete
 The following is the directory structure of the Video Anomaly Detection directory:
 
 * [UCF_crime/](./UCF_crime) ==> contains codes for weakly supervised video anomaly detection
-* [UCSD_pedestrain/](./UCSDPedestraian) ==> contains codes for unsupervised video anomaly detection
+* [UCSD_pedestrian/](./UCSDPedestrian) ==> contains codes for unsupervised video anomaly detection
