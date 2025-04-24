@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository contains codes to run the frame-level video anomaly detection method on the UCSD pedestrain dataset. UCSD pedestrain was collected in a spacious walkway where pedestrians moved parallel to the camera plane using a stationary camera.
+This repository contains codes to run the frame-level video anomaly detection method on the UCSD pedestrain dataset. UCSD pedestrian was collected in a spacious walkway where pedestrians moved parallel to the camera plane using a stationary camera.
 
 
 ## Structure
@@ -25,7 +25,7 @@ The following is the directory structure of the UCSDPedestrain directory:
 
 ## Usage
 
-`UCSDPedestrian_demo.ipynb` is a notebook to run this algorithm. You can also run `Demo_run.py` file using following command to run this algorithm from terminal.
+[UCSDPedestrian_demo.ipynb](./UCSDPedestrian_demo.ipynb) is a notebook to run this algorithm. You can also run [Demo_run.py](./Demo_run.py) file using following command to run this algorithm from terminal.
 
 ```bash
 python Demo_run.py 
