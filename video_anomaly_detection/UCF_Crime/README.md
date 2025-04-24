@@ -13,7 +13,7 @@ The following is the structure of the UCF_Crime directory:
 * [learner.py](./learner.py): contains code to implement a weakly supervised anomaly detection model based on the Multiple Instance Learning (MIL) framework.
 * [loss.py](./loss.py): contains code for a custom loss function within the MIL framework
 * [main.py](./main.py): contains code for training and testing the implemented Anomaly Detection (AD) method
-* [UCF-Crime_demo.ipynb](./UCF-Crime_demo.ipynb): a notebook to experiment with the implemented MIL based Anomaly Detection Model
+* [UCFCrime_demo.ipynb](./UCFCrime_demo.ipynb): a notebook to experiment with the implemented MIL based Anomaly Detection Model
 
 
 
