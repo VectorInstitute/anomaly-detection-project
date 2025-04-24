@@ -14,14 +14,32 @@ We hope this bootcamp provides a valuable learning experience in the exciting fi
 
 ### Installing dependencies
 
-We use [uv](https://github.com/astral-sh/uv) to manage dependencies. Make the virtual environment and install the dependencies with the commands below:
+We use [uv](https://github.com/astral-sh/uv) to manage dependencies. Make the virtual environment, install the dependencies and activate the virtual environment with the commands below:
 ```shell
 pip install uv==0.6.16
-uv venv
+uv sync --no-install-project
 source .venv/bin/activate
-uv pip install --upgrade pip setuptools wheel torch~="1.13.0"
-uv sync --no-install-project --no-build-isolation
 ```
+
+For the [torch-geometric](https://pytorch-geometric.readthedocs.io/en/1.6.3/notes/installation.html) dependencies, find out your exact PyTorch and CUDA versions first with the commands below:
+
+```shell
+$ python -c "import torch; print(torch.__version__)"
+>>> 1.13.0
+$ python -c "import torch; print(torch.version.cuda)"
+>>> 11.7
+```
+
+Then run the commands below making sure to replace the `pt113` and `torch-1.13.0` occurences with your exact PyTorch version and the `cu117` with your exact CUDA version:
+```shell
+python -m ensurepip
+python -m pip install torch-scatter==2.1.1+pt113cu117 -f https://pytorch-geometric.com/whl/torch-1.13.0+cu117.html
+python -m pip install torch-sparse==0.6.17+pt113cu117 -f https://pytorch-geometric.com/whl/torch-1.13.0+cu117.html
+python -m pip install torch-cluster==1.6.1+pt113cu117 -f https://pytorch-geometric.com/whl/torch-1.13.0+cu117.html
+python -m pip install torch-spline-conv==1.2.2+pt113cu117 -f https://pytorch-geometric.com/whl/torch-1.13.0+cu117.html
+python -m pip install torch-geometric
+```
+
 
 ## Datasets
 
