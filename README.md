@@ -30,7 +30,7 @@ $ python -c "import torch; print(torch.version.cuda)"
 >>> 11.7
 ```
 
-Then run the commands below making sure to replace the `pt113` and `torch-1.13.0` occurences with your exact PyTorch version and the `cu117` with your exact CUDA version:
+Then, install `torch-geometric` and its dependencies with the commands below making sure to replace the `pt113` and `torch-1.13.0` occurences with your exact PyTorch version and the `cu117` occurrences with your exact CUDA version:
 ```shell
 python -m ensurepip
 python -m pip install torch-scatter==2.1.1+pt113cu117 -f https://pytorch-geometric.com/whl/torch-1.13.0+cu117.html
