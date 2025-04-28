@@ -7,14 +7,13 @@ This repository contains the code and resources for performing video-level anoma
 
 
 ## Structure
-The following is the structure of the UCF-Crime directory:
+The following is the structure of the UCF_Crime directory:
 
-* [dataset.py](./UCF-Crime/dataset.py): contains code for loading extracted features from the UCF-Crime dataset.
-* [learner.py](./UCF-Crime/learner.py): contains code to implement a weakly supervised anomaly detection model based on the Multiple Instance Learning (MIL) framework.
-* [loss.py](./UCF-Crime/loss.py): contains code for a custom loss function within the MIL framework
-* [main.py](./UCF-Crime/main.py): contains code for training and testing the implemented anomaly detection (AD) method
-* [UCF-Crime_demo.ipynb](./UCF-Crime/UCF-Crime_demo.ipynb): a notebook to experiment with the implemented MIL based Anomaly Detection Model
-<!-- * [UCF-Crime_demo.ipynb](./UCSDPedestraian/UCSDPedestrain_demo.ipynb): a notebook to experiment with MIL algorithm -->
+* [dataset.py](./dataset.py): contains code for loading extracted features from the UCF_Crime dataset.
+* [learner.py](./learner.py): contains code to implement a weakly supervised anomaly detection model based on the Multiple Instance Learning (MIL) framework.
+* [loss.py](./loss.py): contains code for a custom loss function within the MIL framework
+* [main.py](./main.py): contains code for training and testing the implemented Anomaly Detection (AD) method
+* [UCFCrime_demo.ipynb](./UCFCrime_demo.ipynb): a notebook to experiment with the implemented MIL based Anomaly Detection Model
 
 
 

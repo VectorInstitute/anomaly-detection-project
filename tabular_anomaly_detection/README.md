@@ -1,6 +1,6 @@
 # BAF - Tabular Anomlay Detection Demo
 
-Welcome to Bank Account Fraud (BAF) demo where we provide two reference implementations to do a comprehensive analysis of this dataset and explore fraud detection in online bank account openings. In `BAF-demo-1.ipynb`, we will delve into a detailed description of the [BAF dataset](https://arxiv.org/pdf/2211.13358.pdf), which centers around detecting fraudulent applications in a large consumer bank and explore machine learning-based methods for fraud detection. In `BAF-demo-2.ipynb`, we will further dive into deep learning-based methodologies applied to the same dataset.
+Welcome to Bank Account Fraud (BAF) demo where we provide two reference implementations to do a comprehensive analysis of this dataset and explore fraud detection in online bank account openings. In [BAF-demo-1.ipynb](./BAF-demo-1.ipynb), we will delve into a detailed description of the [BAF dataset](https://arxiv.org/pdf/2211.13358.pdf), which centers around detecting fraudulent applications in a large consumer bank and explore machine learning-based methods for fraud detection. In [BAF-demo-2.ipynb](./BAF-demo-2.ipynb), we will further dive into deep learning-based methodologies applied to the same dataset.
 
 ## Dataset Overview
 
@@ -26,7 +26,7 @@ The BAF dataset includes six dataset variants, each with pre-determined and cont
 
 # Dataset Preparation
 
-The `BAFDataset` class provides a convenient way to load, preprocess, and split the BAF dataset for use in machine learning experiments. The class contains three primary functions that work together to load the data, split it into train and test sets, and preprocess the categorical features via one-hot encoding.
+The [BAFDataset](./baf.py) class provides a convenient way to load, preprocess, and split the BAF dataset for use in machine learning experiments. The class contains three primary functions that work together to load the data, split it into train and test sets, and preprocess the categorical features via one-hot encoding.
 
 - `load_baf(file_path)`: This function loads the specified subset of the BAF dataset as a pandas DataFrame. The available subsets are 'Base', 'Variant I', 'Variant II', 'Variant III', 'Variant IV', and 'Variant V'.
 - `train_test_split(df, month)`: This function splits the BAF dataset into train and test sets based on the specified month.

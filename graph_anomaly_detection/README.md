@@ -48,19 +48,19 @@ The following is the directory structure of the DGraph directory:
 
 ## Usage
 
-`DGraphFin_demo.ipynb` is a notebook to experiment with these algorithms. You can also run `Demo_run.py` file using following command to run this algorithms from terminal.
+[DGraphFin_demo.ipynb](./DGraphFin_demo.ipynb) is a notebook to experiment with these algorithms. You can also run [Demo_run.py](./Demo_run.py) file using following command to run this algorithms from terminal.
 
 ```bash
 python Demo_run.py 
 \ --model_type ['Graph'/'Tabular'] 
-\ --supervision ['Supervised'/'Unsupervise'] 
+\ --supervision ['Supervised'/'Unsupervised'] 
 \ --model_name [model_name] 
 \ --dir [directory to save results] 
 \ --suffix [suffix to add to the result file name] 
 \ --seed_list [list of seed to run] 
 \ --rla_list [list of ratio of labeled anomalies]
 ```
- In this files, each of these algorithms are first imported from their corresponding `run.py` file and then run on the DGraph dataset. The results are saved in the given directory with specified suffix. You can also specify seed list and list of ratio of labeled anomalies to run these algorithms multiple times with different seeds and different ratio of labeled anomalies.
+ In this file, each of these algorithms are first imported from their corresponding `run.py` file and then run on the DGraph dataset. The results are saved in the given directory with specified suffix. You can also specify seed list and list of ratio of labeled anomalies to run these algorithms multiple times with different seeds and different ratio of labeled anomalies.
 
 ## Contributing 
 
